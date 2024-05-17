@@ -48,8 +48,8 @@ function createServerIfReady() {
         const notesArray = notesData.map((_note) => {
             //truncate om innehåll är för långt
             let noteContent = _note.content;
-            if (noteContent.length > 20) {
-                noteContent = noteContent.slice(0, 20) + "...";
+            if (noteContent.length > 14) {
+                noteContent = noteContent.slice(0, 14) + "...";
             }
 
             //erätter alla placeholder med json värden (alltså data(data))
